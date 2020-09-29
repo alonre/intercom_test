@@ -8,6 +8,11 @@
         $(this).remove();
       });
     }
+    setTimeout(function() {
+      console.log("delayed action");
+      var a = $('<a href="#chat-with-us" class="btn-services scrollto">Chat with us</a>');
+      $("#buttons").append(a);
+    }, 4000);
   });
 
   // Back to top button
